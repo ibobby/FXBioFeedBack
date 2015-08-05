@@ -97,7 +97,7 @@ public class UndecoratorSceneDemo extends Application {
     }
 
     void initUI() {
-        accordion.setExpandedPane(accordion.getPanes().get(1));
+        accordion.setExpandedPane(accordion.getPanes().get(0));
         clientAreaHbox.opacityProperty().bind(sliderOpacity.valueProperty());
         hyperlink.setOnAction(new EventHandler<ActionEvent>() {
 

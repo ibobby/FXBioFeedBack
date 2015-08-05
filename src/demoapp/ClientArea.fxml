@@ -44,7 +44,11 @@
         <panes>
                   <TitledPane animated="false" text="Основные">
                     <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label text="Клиентская часть системы для изучения и тренировки био-  логической обратной связи" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
                     </content>
                   </TitledPane>
           <TitledPane expanded="false" prefHeight="250.0" prefWidth="238.0" text="Features">
@@ -72,9 +76,9 @@
       </Accordion>
       <AnchorPane HBox.hgrow="ALWAYS">
                <children>
-                  <ScrollPane layoutX="14.0" layoutY="49.0" style="-fx-background-color: transparent;">
+                  <ScrollPane layoutX="14.0" layoutY="49.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="40.0">
                      <content>
-                        <ImageView fitHeight="280.0" fitWidth="377.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="460.0" fitWidth="577.0" pickOnBounds="true" preserveRatio="true" smooth="false">
                            <image>
                               <Image url="@snippet.png" />
                            </image>
