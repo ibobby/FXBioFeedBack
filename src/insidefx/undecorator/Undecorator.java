@@ -567,7 +567,7 @@ public class Undecorator extends StackPane {
     public void initDecoration() {
         MenuItem minimizeMenuItem = null;
         // Menu
-        contextMenu.setAutoHide(true);
+        //contextMenu.setAutoHide(true);
         if (minimize != null) { // Utility Stage
             minimizeMenuItem = new MenuItem(LOC.getString("Minimize"));
             minimizeMenuItem.setAccelerator(new KeyCodeCombination(KeyCode.M, KeyCombination.SHORTCUT_DOWN));
@@ -578,7 +578,7 @@ public class Undecorator extends StackPane {
                     switchMinimize();
                 }
             });
-            contextMenu.getItems().add(minimizeMenuItem);
+            //contextMenu.getItems().add(minimizeMenuItem);
         }
         if (maximize != null && stage.isResizable()) { // Utility Stage type
             maximizeMenuItem = new MenuItem(LOC.getString("Maximize"));
@@ -586,10 +586,10 @@ public class Undecorator extends StackPane {
                 @Override
                 public void handle(ActionEvent e) {
                     switchMaximize();
-                    contextMenu.hide(); // Stay stuck on screen
+                    //contextMenu.hide(); // Stay stuck on screen
                 }
             });
-            contextMenu.getItems().addAll(maximizeMenuItem, new SeparatorMenuItem());
+            //contextMenu.getItems().addAll(maximizeMenuItem, new SeparatorMenuItem());
         }
 
         // Fullscreen
@@ -605,7 +605,7 @@ public class Undecorator extends StackPane {
             });
             fullScreenMenuItem.setAccelerator(new KeyCodeCombination(KeyCode.F, KeyCombination.CONTROL_DOWN, KeyCombination.SHORTCUT_DOWN));
 
-            contextMenu.getItems().addAll(fullScreenMenuItem, new SeparatorMenuItem());
+            //contextMenu.getItems().addAll(fullScreenMenuItem, new SeparatorMenuItem());
         }
 
         // Close
@@ -618,18 +618,18 @@ public class Undecorator extends StackPane {
         });
         closeMenuItem.setAccelerator(new KeyCodeCombination(KeyCode.W, KeyCombination.SHORTCUT_DOWN));
 
-        contextMenu.getItems().add(closeMenuItem);
+        //contextMenu.getItems().add(closeMenuItem);
 
-        menu.setOnMousePressed(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent t) {
-                if (contextMenu.isShowing()) {
-                    contextMenu.hide();
-                } else {
-                    contextMenu.show(menu, Side.BOTTOM, 0, 0);
-                }
-            }
-        });
+//        menu.setOnMousePressed(new EventHandler<MouseEvent>() {
+//            @Override
+//            public void handle(MouseEvent t) {
+//                if (contextMenu.isShowing()) {
+//                    contextMenu.hide();
+//                } else {
+//                    contextMenu.show(menu, Side.BOTTOM, 0, 0);
+//                }
+//            }
+//        });
 
         // Close button
         close.setTooltip(new Tooltip(LOC.getString("Close")));

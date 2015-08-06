@@ -76,15 +76,12 @@ public class UndecoratorSceneDemo extends Application {
         });
 
         // Application icons
-        Image image = new Image("/demoapp/in-sidefx.png");
+        Image image = new Image("/demoapp/logo.png");
         primaryStage.getIcons().addAll(image);
         initUI();
 
         primaryStage.setScene(undecoratorScene);
-        //primaryStage.sizeToScene();
-
-        stage.setWidth(1000);
-        stage.setHeight(900);
+        primaryStage.sizeToScene();
 
         primaryStage.toFront();
 

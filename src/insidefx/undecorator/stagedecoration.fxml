@@ -30,13 +30,6 @@
             <Cursor fx:constant="DEFAULT" />
          </cursor></Button>
     <Button fx:id="resize" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" mouseTransparent="true" pickOnBounds="true" prefHeight="10.0" prefWidth="10.0" styleClass="decoration-button-resize" text="" AnchorPane.bottomAnchor="-5.0" AnchorPane.rightAnchor="-5.0" />
-    <Button id="StageMenu" fx:id="menu" layoutX="0.0" mnemonicParsing="false" pickOnBounds="true" prefHeight="30.0" prefWidth="39.0" styleClass="decoration-button-menu" text="" AnchorPane.leftAnchor="-3.0" AnchorPane.topAnchor="-7.0">
-         <cursor>
-            <Cursor fx:constant="DEFAULT" />
-         </cursor>
-         <contextMenu>
-            <ContextMenu fx:id="contextMenu" />
-         </contextMenu></Button>
     <Button fx:id="fullscreen" mnemonicParsing="false" pickOnBounds="true" prefHeight="30.0" prefWidth="34.0" style="" styleClass="decoration-button-fullscreen" text="" AnchorPane.rightAnchor="98.0" AnchorPane.topAnchor="-3.0">
          <cursor>
             <Cursor fx:constant="DEFAULT" />

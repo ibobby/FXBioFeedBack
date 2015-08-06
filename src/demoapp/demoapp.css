@@ -6,7 +6,7 @@
         Demo app purpose
 */
 .logo{
-    -fx-image:url("./in-sidefx.png");
+    -fx-image:url("./logo.png");
 }
 .logo-label{
     -fx-font-weight:bold;

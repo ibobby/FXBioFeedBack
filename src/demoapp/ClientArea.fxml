@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.media.*?>
 <?import java.lang.*?>
 <?import java.net.*?>
 <?import java.util.*?>
@@ -13,7 +14,7 @@
 <?import javafx.scene.text.*?>
 <?import javafx.scene.web.*?>
 
-<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="380.0" minWidth="450.0" pickOnBounds="true" prefHeight="400.0" prefWidth="640.0" styleClass="clientarea-background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="380.0" minWidth="450.0" pickOnBounds="true" prefHeight="729.0" prefWidth="849.0" styleClass="clientarea-background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
   <children>
     <AnchorPane id="" pickOnBounds="false" prefHeight="37.0" prefWidth="640.0" style="-fx-background-color: transparent;" visible="true">
       <children>
@@ -78,15 +79,19 @@
                <children>
                   <ScrollPane layoutX="14.0" layoutY="49.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="40.0">
                      <content>
-                        <ImageView fitHeight="460.0" fitWidth="577.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                        <ImageView fitHeight="88.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true" smooth="false">
                            <image>
-                              <Image url="@snippet.png" />
+                              <Image url="@logo.png" />
                            </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
                         </ImageView>
                      </content>
                   </ScrollPane>
-                  <Hyperlink fx:id="hyperlink" layoutX="254.0" layoutY="6.0" text="more detais here..." AnchorPane.rightAnchor="14.0" />
-                  <Label layoutX="14.0" layoutY="8.0" text="How to enable it into your project:" AnchorPane.leftAnchor="14.0" />
+                  <Hyperlink fx:id="hyperlink" layoutX="254.0" layoutY="6.0" text="дополнительные детали..." AnchorPane.rightAnchor="14.0" />
+                  <Label layoutX="14.0" layoutY="8.0" text="Описание проекта:" AnchorPane.leftAnchor="14.0" />
+                  <Label layoutX="17.0" layoutY="165.0" prefHeight="25.0" prefWidth="568.0" text="Проект направлен на изучение механизма функционирования биологической обратной связи." />
                </children>
             </AnchorPane>
          </children>
