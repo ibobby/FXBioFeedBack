@@ -154,7 +154,7 @@ public class UndecoratorSceneDemo extends Application {
     private void handleShowNonResizableStage(ActionEvent event) throws Exception {
         UndecoratorSceneDemo undecoratorSceneDemo = new UndecoratorSceneDemo();
         Stage stage = new Stage();
-        stage.setTitle("Not resizable stage");
+        //stage.setTitle("Not resizable stage");
         stage.setResizable(false);
         stage.setWidth(600);
         stage.setMinHeight(400);
